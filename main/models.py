@@ -6,12 +6,12 @@ class Reservation(models.Model):
     name = models.CharField(default='None', max_length=30)
     Restaurant = models.ForeignKey("Restaurant", on_delete=models.PROTECT)
     Booking_time = models.DateTimeField(null=False, blank=False, unique=True)
- 
+
 
 def __str__(self):
     return self.Name
-  
- 
+
+
 class Restaurant(models.Model):
     name = models.CharField(max_length=20*)
 
